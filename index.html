@@ -1,31 +1,478 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  
-<head>
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, 
-       initial-scale-1.0"/>
-  <title>Final Project</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Sun - Restuarant</title>
 
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="menu.html">Menu</a></li>
-    </ul>
-  </nav>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <main>
-    <h1>Home</h1>
-    <p>text wahoo</p>
-  </main>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
 
-  <footer>
-    <p>footer text</p>
-  </footer>
-</body>  
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preload" data-preload>
+      <div class="circle"></div>
+      <p class="text">Red Sun</p>
+    </div>
 
+    <!-- HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="img/redsun_logo.png"
+            width="140"
+            height="50"
+            alt="Red Sun - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="index.html" class="logo">
+            <img
+              src="img/redsun_logo.png"
+              width="140"
+              height="50"
+              alt="Red Sun - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#chef" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Our Chefs</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Contacts</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#testimonials" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span"> Our Testimonials</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              Yincheng Rd, Lujiazui, Pudong <br />
+              Shanghai, China, 200120
+            </address>
+
+            <p class="body-4 navbar-text">Open: 11.00 am to 9.00 pm</p>
+
+            <a href="mailto:booking@redsun.com" class="body-4 sidebar-link"
+              >booking@redsun.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a
+              href="tel:+862161999766"
+              class="body-1 contact-number hover-underline"
+              >+86 21 6142 9726</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img
+                src="img/hero_image_1.jpg"
+                width="1500"
+                height="450"
+                alt
+                class="img-cover"
+              />
+            </div>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br />
+              Chinese food.
+            </h1>
+          </li>
+        </ul>
+
+        <button
+          class="slider-btn prev"
+          aria-label="slide to previous"
+          data-prev-btn
+        >
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button
+          class="slider-btn next"
+          aria-label="slide to next"
+          data-next-btn
+        >
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+
+      <!-- about section -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <h1 class="headline-1">About Us</h1>
+
+          <!-- Restaurant Image -->
+          <div class="about-image-container">
+            <img
+              src="img/Restaurant.png"
+              alt="Red Sun Restaurant"
+              class="about-image"
+            />
+          </div>
+
+          <!-- Description -->
+          <p class="body-1 about-description">
+            At Red Sun, we bring you the authentic taste of Asia with a modern twist. Our story began in Shanghai, where culinary traditions meet innovation.
+            Our mission is to provide an unforgettable dining experience, combining exquisite flavors with exceptional service in an elegant atmosphere.
+            Each dish at Red Sun is crafted with the finest, freshest ingredients to ensure the highest quality. Our chefs draw inspiration from the rich culinary heritage of Asia while adding their unique contemporary flair to create dishes that are as visually stunning as they are delicious.
+            From our signature Dim Sum selection to the succulent Peking Duck and the vibrant Sushi platters, every item on our menu is designed to tantalize your taste buds and offer an authentic experience.
+            At the heart of Red Sun is our dedication to creating a space where guests can come together to celebrate life’s special moments. Whether it’s an intimate dinner, a family gathering, or a grand celebration, our team is here to make every visit memorable.
+            Our restaurant's interior combines modern elegance with traditional Asian elements, providing a warm and inviting ambiance that enhances your dining experience. Let the soothing music and impeccable décor transport you to a world of culinary delight.
+            At Red Sun, we don’t just serve meals – we create lasting memories. Come and join us on a journey of taste, tradition, and togetherness.
+          </p>
+        </div>
+      </section>
+
+      <section class="menus-section" id="menu">
+        <div class="container">
+          <h1 class="headline-1">Our Menus</h1>
+          <p class="body-1">
+            Discover our diverse range of exquisite dishes crafted with the
+            finest ingredients.
+          </p>
+
+          <!-- Menu Items -->
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="img/DimSum.png" alt="Dim Sum" class="menu-image" />
+              <h2 class="title-2">Dim Sum Selection</h2>
+              <p class="body-2">A variety of steamed and fried dumplings.</p>
+            </div>
+            <div class="menu-item">
+              <img src="img/Duck.png" alt="Peking Duck" class="menu-image" />
+              <h2 class="title-2">Peking Duck</h2>
+              <p class="body-2">
+                Crispy duck served with pancakes and hoisin sauce.
+              </p>
+            </div>
+            <div class="menu-item">
+              <img src="img/Sushi.png" alt="Sushi Platter" class="menu-image" />
+              <h2 class="title-2">Sushi Platter</h2>
+              <p class="body-2">
+                An assortment of fresh sushi rolls and sashimi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- chefs-section -->
+      <section class="chefs-section" id="chef">
+        <div class="container">
+          <h1 class="headline-1">Our Chefs</h1>
+          <p class="body-1">
+            Meet the culinary masters behind our exquisite dishes.
+          </p>
+
+          <!-- Chef Profiles -->
+          <div class="chefs-profiles">
+            <div class="chef-profile">
+              <img src="img/Li.png" alt="Chef Li Wei" class="chef-image" />
+              <h2 class="title-2">Chef Li Wei</h2>
+              <p class="body-2">
+                Expert in traditional Chinese cuisine with over 20 years of
+                experience.
+              </p>
+            </div>
+            <div class="chef-profile">
+              <img
+                src="img/Akira.png"
+                alt="Chef Akira Sato"
+                class="chef-image"
+              />
+              <h2 class="title-2">Chef Akira Sato</h2>
+              <p class="body-2">
+                Renowned sushi chef trained in Tokyo's finest restaurants.
+              </p>
+            </div>
+            <div class="chef-profile">
+              <img src="img/Mei.png" alt="Chef Mei Lin" class="chef-image" />
+              <h2 class="title-2">Chef Mei Lin</h2>
+              <p class="body-2">
+                Pastry chef specializing in Asian-inspired desserts.
+              </p>
+            </div>
+            <!-- Add more chef profiles as needed -->
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section-->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h1 class="headline-1">Contact Us</h1>
+          <p class="body-1">
+            We'd love to hear from you! Reach out to us, inquiries, or feedback.
+          </p>
+
+          <!-- Contact Form -->
+          <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+              <label for="first-name" class="label-1">First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name" class="label-1">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="label-1">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="label-1">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="label-1">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="text text-1">Send Message</span>
+              <span class="text text-2" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <h1 class="headline-1">What Our Customers Say</h1>
+        <p class="body-1">
+          Hear from our valued guests about their dining experience at Red Sun.
+        </p>
+
+        <!-- Testimonial Items -->
+        <div class="testimonials">
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "The ambiance was absolutely stunning, and the food was simply
+              exquisite. The Peking Duck was a highlight of our evening!"
+            </p>
+            <h2 class="testimonial-author">- Emily R.</h2>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "A must-visit for anyone in Shanghai! The chefs are true artists,
+              and the service is impeccable."
+            </p>
+            <h2 class="testimonial-author">- James L.</h2>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "I loved every dish we tried. The sushi platter was fresh and
+              delightful. Highly recommend!"
+            </p>
+            <h2 class="testimonial-author">- Sarah W.</h2>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "An unforgettable experience! Red Sun combines elegance and taste
+              like no other restaurant I've been to."
+            </p>
+            <h2 class="testimonial-author">- Karen T.</h2>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "The dim sum selection was heavenly, and the desserts were the
+              perfect ending to a fantastic meal."
+            </p>
+            <h2 class="testimonial-author">- Michael H.</h2>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "From the moment we walked in, we were treated like royalty. The
+              staff is amazing, and the food is even better!"
+            </p>
+            <h2 class="testimonial-author">- Olivia D.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-column">
+          <a href="index.html" class="logo">
+            <img
+              src="img/redsun_logo.png"
+              width="140"
+              height="50"
+              alt="Red Sun - Home"
+            />
+          </a>
+          <p class="footer-description">
+            Experience the finest dining and impeccable service at Red Sun. We
+            bring authentic flavors from around the world to your table.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#home" class="footer-link hover-underline">Home</a>
+            </li>
+            <li>
+              <a href="#menul" class="footer-link hover-underline">Menus</a>
+            </li>
+            <li>
+              <a href="#about" class="footer-link hover-underline">About Us</a>
+            </li>
+            <li>
+              <a href="#chef" class="footer-link hover-underline">Our Chefs</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer-link hover-underline"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Contact Us</h3>
+          <address class="footer-address">
+            <p>Yincheng Rd, Lujiazui, Pudong, Shanghai, China, 200120</p>
+            <p>
+              Phone:
+              <a href="tel:+862161999766" class="contact-number"
+                >+86 21 6142 9726</a
+              >
+            </p>
+            <p>
+              Email:
+              <a href="mailto:booking@redsun.com" class="contact-number"
+                >booking@redsun.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Red Sun. All rights reserved. | Designed by Comp126</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
