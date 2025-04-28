@@ -1105,6 +1105,10 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .hero-title{
+    font-size: 5rem;
+  }
+
   .about-image-container {
     padding: 15px;
   }
