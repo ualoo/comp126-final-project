@@ -207,7 +207,7 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #HEADER (Mobile First)
+  #HEADER
 \*-----------------------------------*/
 
 .overlay,
@@ -358,7 +358,7 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #HERO (Mobile First)
+  #HERO
 \*-----------------------------------*/
 
 .hero .slider-btn { display: none; }
@@ -465,7 +465,7 @@ body.nav-active { overflow: hidden; }
 .img-cover { filter: brightness(0.4); }
 
 /*-----------------------------------*\
-  #MENU SECTION (Mobile First)
+  #MENU SECTION
 \*-----------------------------------*/
 
 .menus-section {
@@ -525,7 +525,7 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #CHEFS SECTION (Mobile First)
+  #CHEFS SECTION
 \*-----------------------------------*/
 
 .chefs-section {
@@ -586,7 +586,7 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #ABOUT SECTION (Mobile First)
+  #ABOUT SECTION
 \*-----------------------------------*/
 
 .about-section {
@@ -642,7 +642,7 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #CONTACT SECTION (Mobile First)
+  #CONTACT SECTION
 \*-----------------------------------*/
 
 .contact-section {
@@ -729,7 +729,7 @@ textarea {
 }
 
 /*-----------------------------------*\
-  #TESTIMONIAL SECTION (Mobile First)
+  #TESTIMONIAL SECTION
 \*-----------------------------------*/
 
 .testimonials-section {
@@ -790,7 +790,7 @@ textarea {
 }
 
 /*-----------------------------------*\
-  #FOOTER SECTION (Mobile First)
+  #FOOTER SECTION
 \*-----------------------------------*/
 
 .footer {
@@ -861,9 +861,6 @@ textarea {
   color: #ccc;
 }
 
-/*-----------------------------------*\
-  #480PX BREAKPOINT
-\*-----------------------------------*/
 @media (min-width: 480px) {
   /* Typography */
   .display-1 { font-size: 4rem; }
@@ -911,9 +908,6 @@ textarea {
   }
 }
 
-/*-----------------------------------*\
-  #768PX BREAKPOINT
-\*-----------------------------------*/
 @media (min-width: 768px) {
   /* Typography */
   body { font-size: 1.6rem; }
